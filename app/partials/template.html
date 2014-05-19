@@ -1,0 +1,17 @@
+<pre>
+&lt;!DOCTYPE html&gt;
+{{ tpl_html_element || '&lt;html&gt;' }}
+&lt;head lang="en"&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;{{ tpl_html_title }}&lt;/title&gt;
+    &lt;meta name="description" content="{{ tpl_meta_description }}" &gt;
+    &lt;meta name="keywords" content="{{ tpl_meta_keywords }}" &gt;
+    <span rel="{{$index}}" ng-repeat="style in tpl_css">{{ style + '\n' || '' }}</span>
+&lt;/head&gt;
+&lt;body&gt;
+    {{ tpl_body_text + '\n' || '' }}
+&lt;!-- scripts --&gt;
+<span rel="{{$index}}" ng-repeat="script in tpl_js">{{ script + '\n' || '' }}</span>
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>

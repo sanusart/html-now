@@ -1,0 +1,51 @@
+/* app css stylesheet */
+
+body {
+    font-family: 'trebuchet ms', arial, verdana, sans-serif;
+}
+
+:focus {
+    outline: none;
+}
+
+h1.logo {
+    text-align: center;
+    font-weight: 700;
+    font-size: 56px;
+    margin: 10px auto;
+    text-transform: lowercase;
+}
+
+.panel {
+    position: absolute;
+    top: 0;
+    background: tomato;
+    left: 0;
+    width: 300px;
+    height: 100%;
+}
+
+details {
+    padding: 0 10px;
+    margin: 0;
+}
+
+details p {
+    margin: 0;
+}
+
+details summary {
+    background: #555;
+    padding: 8px 10px;
+    color: #fff;
+    margin: 0px 0px 1px 0px;
+    cursor: pointer;
+}
+
+.content {
+    margin: 0px 0px 0px 350px;
+    display: block;
+    float: left;
+    position: absolute;
+    top: 0;
+}
