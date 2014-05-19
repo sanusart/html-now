@@ -2,4 +2,4 @@
 
 Fast HTML template generator
 
-> TOTALLY WIP
+> http://sanusart.github.io/html-now
