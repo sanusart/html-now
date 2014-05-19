@@ -1,6 +1,6 @@
 <div class="panel">
 <h1 class="logo">html</h1>
-
+<a class="info" ng-click="show.the.info=!show.the.info"><i class="fa fa-info-circle"></i></a>
     <details>
         <summary>TEXT</summary>
 
@@ -40,7 +40,26 @@
 
 
 </div>
+<div class="info" ng-show="show.the.info">
+    <a class="close" ng-click="show.the.info=!show.the.info">X</a>
+    <h3>What's this?</h3>
+    <p>This will assist you to create very basic HTML template for your page/application as a fast start point. Nothing fancy here,
+        it will only allow you to choose and add scripts or styles.</p>
 
+    <h3>How it works</h3>
+    <p>There are few settings in the tabs on the left which will allow you to perform simple additions to the template that you see in front of you.</p>
+
+    <h3>Made of...</h3>
+    <p>This was made of <a href="https://angularjs.org/">AngularJs</a>, <a href="http://jquery.com/">jQuery</a>, <a href="http://bower.io/">bower</a>, <a href="http://necolas.github.io/normalize.css/">normalize.css</a> and <a href="http://fortawesome.github.io/Font-Awesome/">font-awesome</a></p>
+    <hr />
+
+    <p>&copy; 2014 Sasha Khamkov | <a href="http://sanusart.com">sanusart.com</a> |
+        <a rel="nofollow" class="socials_btns button_facebook" href="http://www.facebook.com/" onclick="popUp=window.open('http://www.facebook.com/sharer.php?u=http://sanusart.github.io/html-now', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false"><i class="fa fa-facebook-square"></i></a>
+
+        <a rel="nofollow" class="socials_btns button_twitter" href="http://twitter.com/" onclick="popUp=window.open('http://twitter.com/home?status=Fast, online HTML template generator http://sanusart.github.io/html-now #html-now', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false"><i class="fa fa-twitter-square"></i></a>
+
+        <a rel="nofollow" class="socials_btns button_google" href="http://www.plusone.google.com/" onclick="popUp=window.open('https://plus.google.com/share?url=http://sanusart.github.io/html-now', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false"><i class="fa fa-google-plus-square"></i></a></p>
+</div>
 <div class="content">
     <h1>{{welcome}}</h1>
 

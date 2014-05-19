@@ -1,4 +1,6 @@
-/* app css stylesheet */
+html {
+    background: #f2f2f2;
+}
 
 body {
     font-family: 'trebuchet ms', arial, verdana, sans-serif;
@@ -8,12 +10,18 @@ body {
     outline: none;
 }
 
+a {
+    cursor: pointer;
+}
+
 h1.logo {
     text-align: center;
     font-weight: 700;
     font-size: 56px;
+    color: #555;
     margin: 10px auto;
     text-transform: lowercase;
+    text-shadow: 1px 1px 1px #333,1px 1px 50px #fff;
 }
 
 .panel {
@@ -24,6 +32,8 @@ h1.logo {
     width: 300px;
     height: 100%;
     overflow: auto;
+    box-shadow: 0px 0px 10px #000;
+    z-index: 2;
 }
 
 .panel input[type="text"], .panel textarea {
@@ -77,4 +87,40 @@ details summary {
 pre {
     font-family: monospace !important;
     font-size: 1.3em !important;
+}
+
+a.info {
+    position: absolute;
+    top: 0;
+    left: 283px;
+    color: #555;
+    cursor: pointer;
+}
+
+div.info {
+    position: absolute;
+    left: 300px;
+    background: teal;
+    z-index: 1;
+    min-width: 400px;
+    padding: 0 20px;
+    width: 48%;
+    /* opacity: 0.98; */
+    color: #fff;
+}
+
+div.info a.close {
+    border: none;
+    background: #fff;
+    color: #555;
+    text-decoration: none;
+    padding: 0 7px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-radius: 50%;
+}
+
+div.info a {
+    color:#fff;
 }
