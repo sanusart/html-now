@@ -27,12 +27,12 @@ angular.module('htmlNow.directives', []).directive('tplCode', ['dataService', '$
                 };
 
                 if (lib.type === 'js') {
-                    scope.tpl_js.push('<script id="' + $filter('noSpace')(lib.name) + '" src="' + $filter('setVersion')(dataService[lib.type][lib.name].url, dataService[lib.type][lib.name].version) + '"></script>');
+                    scope.tpl_js.push('<script data-head-script="' + $filter('noSpace')(lib.name) + '" src="' + $filter('setVersion')(dataService[lib.type][lib.name].url, dataService[lib.type][lib.name].version) + '"></script>');
                     if (lib.name === 'modernizr') {
                         scope.tpl_tag_html = '<!--[if lt IE 7]><html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->\n<!--[if IE 7]><html lang="en" class="no-js lt-ie9 lt-ie8"><![endif]-->\n<!--[if IE 8]><html lang="en" class="no-js lt-ie9"><![endif]-->\n<!--[if gt IE 8]><!--><html lang="en" class="no-js"><!--<![endif]-->';
                     }
                 } else if (lib.type === 'css') {
-                    scope.tpl_css.push('<link rel="stylesheet" id="' + $filter('noSpace')(lib.name) + '" href="' + $filter('setVersion')(dataService[lib.type][lib.name].url, dataService[lib.type][lib.name].version) + '">');
+                    scope.tpl_css.push('<link rel="stylesheet" data-head-script="' + $filter('noSpace')(lib.name) + '" href="' + $filter('setVersion')(dataService[lib.type][lib.name].url, dataService[lib.type][lib.name].version) + '">');
                 } else {
                     console.log('We still don\'t know how to process ' + lib.type + ' :(');
                 }
