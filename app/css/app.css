@@ -87,6 +87,7 @@ details summary {
 pre {
     font-family: monospace !important;
     font-size: 1.3em !important;
+    white-space: pre-wrap;
 }
 
 a.info {
