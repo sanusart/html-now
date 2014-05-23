@@ -29,13 +29,11 @@
         <summary>SCRIPTS</summary>
 
         <h3>USE:</h3>
-        <p><button ng-click="useScript('js','jquery v1')">add <i class="fa fa-plus"></i> </button> Jquery V1.x.x</p>
-        <p><button ng-click="useScript('js','jquery-migrate')">add <i class="fa fa-plus"></i> </button> Jquery-migrate</p>
-        <p><button ng-click="useScript('js','jquery v2')">add <i class="fa fa-plus"></i> </button> Jquery V2.x.x</p>
-        <p><button ng-click="useScript('js','modernizr')">add <i class="fa fa-plus"></i> </button> Modernizr</p>
-        <p><button ng-click="useScript('js','local-file')">add <i class="fa fa-plus"></i> </button> local JS file</p>
-        <p><button ng-click="useScript('css','normalize')">add <i class="fa fa-plus"></i> </button> Normalize CSS</p>
-        <p><button ng-click="useScript('css','local-file')">add <i class="fa fa-plus"></i> </button> local CSS file</p>
+
+        <p ng-repeat="lib in libs track by $index">
+            <button ng-click="useScript($index)">add <i class="fa fa-plus"></i> </button> {{lib.name}}
+        </p>
+
     </details>
 
 
@@ -49,8 +47,8 @@
     <h3>How it works</h3>
     <p>There are few settings in the tabs on the left which will allow you to perform simple additions to the template that you see in front of you.</p>
 
-    <h3>Made of...</h3>
-    <p>This was made of <a href="https://angularjs.org/">AngularJs</a>, <a href="http://jquery.com/">jQuery</a>, <a href="http://bower.io/">bower</a>, <a href="http://necolas.github.io/normalize.css/">normalize.css</a> and <a href="http://fortawesome.github.io/Font-Awesome/">font-awesome</a></p>
+    <h3>Made using...</h3>
+    <p>This was made using <a href="https://angularjs.org/">AngularJs</a>, <a href="http://jquery.com/">jQuery</a>, <a href="http://bower.io/">bower</a>, <a href="http://necolas.github.io/normalize.css/">normalize.css</a> and <a href="http://fortawesome.github.io/Font-Awesome/">font-awesome</a></p>
     <hr />
 
     <p>&copy; 2014 Sasha Khamkov | <a href="http://sanusart.com">sanusart.com</a> |
