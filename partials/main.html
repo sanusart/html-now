@@ -27,8 +27,9 @@
 
         <h3>USE:</h3>
 
-        <p ng-repeat="lib in libs track by $index">
-            <button ng-click="useScript($index)">add <i class="fa fa-plus"></i> </button> {{lib.name}}
+        <input type="text" ng-model="search_libs" placeholder="Search libraries" title="You can type 'css' or 'js' to filter by script type type">
+        <p ng-repeat="lib in libs | orderBy: ['-type','name']| filter: search_libs track by lib.name">
+            <button ng-click="useScript(lib.name)">add <i class="fa fa-plus"></i> </button> <b>{{lib.type | uppercase}}</b> {{lib.name}}
         </p>
 
     </details>
@@ -58,7 +59,7 @@
 <div class="content">
     <h1>{{welcome}}</h1>
 
-    <tpl-code type="type" name="name" title="tpl_html_title"></tpl-code>
+    <tpl-code></tpl-code>
 
 </div>
 
