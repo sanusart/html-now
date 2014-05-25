@@ -12,7 +12,12 @@
     </details>
 
     <details>
-        <summary>META</summary>
+        <summary>META/HEAD</summary>
+
+        <h3>Meta tags:</h3>
+        <p ng-repeat="meta in libs | filter: { type: 'meta' } track by $index">
+            <button ng-click="useScript(meta.name)">add <i class="fa fa-plus"></i> </button> {{meta.name}}
+        </p>
 
         <h3>Description:</h3>
         <input type="text" ng-model="tpl_meta_description">
@@ -28,7 +33,7 @@
         <h3>USE:</h3>
 
         <input type="text" ng-model="search_libs" placeholder="Search libraries" title="You can type 'css' or 'js' to filter by script type type">
-        <p ng-repeat="lib in libs | orderBy: ['-type','name']| filter: search_libs track by lib.name">
+        <p ng-repeat="lib in libs | orderBy: ['-type','name'] | filter: search_libs | filter: { type: '!meta' } track by lib.name">
             <button ng-click="useScript(lib.name)">add <i class="fa fa-plus"></i> </button> <b>{{lib.type | uppercase}}</b> {{lib.name}}
         </p>
 
