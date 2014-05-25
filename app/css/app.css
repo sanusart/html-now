@@ -98,7 +98,7 @@ pre {
 a.info {
     position: absolute;
     top: 0;
-    left: 283px;
+    right: 5px;
     color: #555;
     cursor: pointer;
 }
