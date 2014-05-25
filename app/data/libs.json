@@ -83,6 +83,51 @@
         "type": "js"
     },
     {
+        "name": "X-UA-Compatible",
+        "markup": "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">",
+        "type": "meta"
+    },
+    {
+        "name": "Favicon",
+        "markup": "<link rel=\"icon\" type=\"image/x-icon\" href=\"./favicon.ico\">",
+        "type": "meta"
+    },
+    {
+        "name": "Robots",
+        "markup": "<meta name=\"robots\" content=\"index, follow\">",
+        "type": "meta"
+    },
+    {
+        "name": "View Port",
+        "markup": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+        "type": "meta"
+    },
+    {
+        "name": "Browser happy",
+        "markup": "<!--[if lt IE 8]><p class=\"browsehappy\">You are using an <strong>outdated</strong> browser. Please <a href=\"http://browsehappy.com/\">upgrade your browser</a> to improve your experience.</p><![endif]-->",
+        "type": "meta"
+    },
+    {
+        "name": "Author",
+        "markup": "<meta name=\"author\" content=\"\">",
+        "type": "meta"
+    },
+    {
+        "name": "Copyright",
+        "markup": "<meta name=\"copyright\" content=\"\">",
+        "type": "meta"
+    },
+    {
+        "name": "Keywords",
+        "markup": "<meta name=\"keywords\" content=\"\">",
+        "type": "meta"
+    },
+    {
+        "name": "No translate",
+        "markup": "<meta name=\"google\" content=\"notranslate\">",
+        "type": "meta"
+    },
+    {
         "name": "AngularJs csp",
         "url": "//cdn.jsdelivr.net/angularjs/###/angular-csp.css",
         "version": "1.2.16",

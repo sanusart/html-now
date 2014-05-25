@@ -28,7 +28,9 @@ angular.module('htmlNow.directives', []).directive('tplCode', ['dataService', '$
                 }
             };
 
-            scope.$watchCollection('id', function (newValue, oldValue) {
+            console.info('metaTags',scope.metaTags);
+
+            scope.$watch('id', function (newValue, oldValue) {
                 var script_name = newValue;
                 dataService.getLibs(function (libList) {
 
@@ -45,7 +47,9 @@ angular.module('htmlNow.directives', []).directive('tplCode', ['dataService', '$
                                 }
                             } else if (val.type === 'css') {
                                 scope.tpl_css.push('<link rel="stylesheet" href="' + $filter('setVersion')(val.url, val.version) + '">');
-                            } else {
+                            } else if (val.type === 'meta') {
+                                scope.tpl_meta.push(val.markup);
+                            }else {
                                 console.log('We still don\'t know how to process ' + val.type + ' :(');
                             }
 
