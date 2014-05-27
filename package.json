@@ -12,7 +12,6 @@
     },
     "scripts": {
         "postinstall": "bower install",
-        "start": "http-server -a localhost -p 8000",
-        "test": "karma start test/karma.conf.js"
+        "start": "http-server app -a localhost -p 8000"
     }
 }
