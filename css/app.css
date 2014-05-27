@@ -130,3 +130,13 @@ div.info a.close {
 div.info a {
     color:#fff;
 }
+
+.shares {
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+}
+
+.shares iframe {
+    vertical-align: middle;
+}
