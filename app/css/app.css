@@ -140,3 +140,7 @@ div.info a {
 .shares iframe {
     vertical-align: middle;
 }
+
+.g-plusone , #___plusone_0 {
+    vertical-align: middle !important;
+}
