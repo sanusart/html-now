@@ -12,6 +12,10 @@ This will assist you to create very basic HTML template for your page/applicatio
 
 There are few settings in the tabs on the left which will allow you to perform simple additions to the template that you see in front of you.
 
+### Contribute 
+
+Contribute by adding scripts to [libs.json](https://github.com/sanusart/html-now/blob/master/app/data/libs.json), updating versions or improve code, ether way - contributions are always welcome.
+
 ### Made using...
 
 This was made using [AngularJs](https://angularjs.org/), [jQuery](http://jquery.com/), [Bower](http://bower.io/), [normalize.css](http://necolas.github.io/normalize.css/) and [Font-awesome](http://fortawesome.github.io/Font-Awesome/)
