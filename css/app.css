@@ -1,161 +1,135 @@
+.panel input[type="text"], .panel textarea {
+  border: none;
+  padding: 10px;
+  width: 245px; }
+
 html {
-    background: #f2f2f2;
-}
+  background: #f2f2f2; }
 
 body {
-    font-family: 'trebuchet ms', arial, verdana, sans-serif;
-}
+  font-family: trebuchet ms, arial, verdana, sans-serif; }
 
 :focus {
-    outline: none;
-}
+  outline: none; }
 
 a {
-    cursor: pointer;
-}
-
-h1.logo {
-    text-align: center;
-    font-weight: 700;
-    font-size: 56px;
-    color: #555;
-    margin: 10px auto;
-    text-transform: lowercase;
-    text-shadow: 1px 1px 1px #333, 1px 1px 50px #fff;
-}
-
-.panel {
+  cursor: pointer; }
+  a.info {
     position: absolute;
     top: 0;
-    background: tomato;
-    left: 0;
-    width: 300px;
-    height: 100%;
-    overflow: auto;
-    overflow-x: hidden;
-    box-shadow: 0px 0px 10px #000;
-    z-index: 2;
-}
+    right: 5px;
+    color: #555555;
+    cursor: pointer; }
 
-.panel input[type="text"], .panel textarea {
-    border: none;
-    padding: 10px;
-    width: 245px;
-}
-
-.panel h3 {
-    margin-bottom: 5px;
-}
+.panel {
+  position: fixed;
+  top: 0;
+  background: tomato;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+  box-shadow: 0 0 10px black;
+  z-index: 2; }
+  .panel h3 {
+    margin-bottom: 5px; }
 
 details {
-    padding: 0 10px;
-    margin: 0;
-}
-
-details[open] {
-    margin: 0 0 30px 0;
-}
-
-details p {
-    margin: 0;
-}
-
-details button {
+  padding: 0 10px;
+  margin: 0; }
+  details p {
+    margin: 0; }
+  details button {
     border: none;
     padding: 0 5px;
     margin: 0;
     font-size: 12px;
-    border-radius: 3px;
-}
-
-details summary {
-    background: #555;
+    border-radius: 3px; }
+  details summary {
+    background: #555555;
     padding: 8px 10px;
-    color: #fff;
-    margin: 0px 0px 1px 0px;
-    cursor: pointer;
-}
+    color: white;
+    margin: 0 0 1px;
+    cursor: pointer; }
+
+details[open] {
+  margin: 0 0 30px; }
 
 .content {
-    margin: 0px 0px 0px 350px;
-    display: block;
-    float: left;
-    position: absolute;
-    top: 0;
-}
-
-.tpl-item:hover {
-    background: #f8b9b7;
-    cursor: url('../img/delete_garbage.png'), auto;
-}
+  margin: 0 0 0 350px;
+  display: block;
+  float: left;
+  position: absolute;
+  top: 0; }
 
 pre {
-    font-family: monospace !important;
-    font-size: 1.3em !important;
-    white-space: pre-wrap;
-}
-
-a.info {
-    position: absolute;
-    top: 0;
-    right: 5px;
-    color: #555;
-    cursor: pointer;
-}
-
-div.info {
-    position: absolute;
-    left: 300px;
-    background: teal;
-    z-index: 1;
-    min-width: 400px;
-    padding: 0 20px;
-    width: 48%;
-    /* opacity: 0.98; */
-    color: #fff;
-}
-
-div.info a.close {
-    border: none;
-    background: #fff;
-    color: #555;
-    text-decoration: none;
-    padding: 0 7px;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    border-radius: 50%;
-}
-
-div.info a {
-    color: #fff;
-}
+  font-family: monospace !important;
+  font-size: 1.3em;
+  white-space: pre-wrap; }
 
 .shares {
-    position: absolute;
-    right: 20px;
-    bottom: 5px;
-}
+  position: absolute;
+  right: 20px;
+  bottom: 5px; }
 
-.shares iframe {
-    vertical-align: middle;
-}
-
-.g-plusone, #___plusone_0 {
-    vertical-align: middle !important;
-}
+.g-plusone, iframe, #___plusone_0 {
+  vertical-align: middle !important; }
 
 .share-link {
-    z-index: 9999;
-    position: absolute;
-    bottom: 0;
-    padding: 5px 10px;
-    transition: 0.1s;
-    right: 0;
-    background: tomato;
-    color: #555;
-}
-.share-link:hover{
-    color:#fff;
-    zoom:120%;
-}
+  z-index: 9999;
+  position: absolute;
+  bottom: 0;
+  padding: 5px 10px;
+  transition: 0.1s;
+  right: 0;
+  background: tomato;
+  color: #555555; }
+  .share-link:hover {
+    color: white;
+    zoom: 120%; }
+
+h1.logo {
+  text-align: center;
+  font-weight: 700;
+  font-size: 56px;
+  color: #555555;
+  margin: 10px auto;
+  text-transform: lowercase;
+  text-shadow: 1px 1px 1px #333333, 1px 1px 50px white; }
+
+.tpl-item:hover {
+  background: #f8b9b7;
+  cursor: url("../img/delete_garbage.png"), auto; }
+
+div.info {
+  position: absolute;
+  left: 300px;
+  background: teal;
+  z-index: 1;
+  min-width: 400px;
+  padding: 0 20px;
+  width: 48%;
+  color: white; }
+  div.info a {
+    color: white; }
+    div.info a.close {
+      border: none;
+      background: white;
+      color: #555555;
+      text-decoration: none;
+      padding: 0 7px;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      border-radius: 50%; }
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px; }
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1); }
+
+::-webkit-scrollbar-thumb {
+  background: #555; }

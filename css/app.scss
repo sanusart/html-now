@@ -1,0 +1,186 @@
+//colors
+$color_0: #f2f2f2;
+$color_1: #555;
+$color_2: #333;
+$color_3: #fff;
+$color_4: #ff6347;
+$color_5: #000;
+$color_6: #f8b9b7;
+$color_7: #d2b48c;
+$color_8: #008080;
+
+//fonts
+$font_0: trebuchet ms;
+$font_1: arial;
+$font_2: verdana;
+$font_3: sans-serif;
+$font_4: monospace !important;
+
+%inputs {
+  border: none;
+  padding: 10px;
+  width: 245px;
+}
+
+html {
+  background: $color_0;
+}
+
+body {
+  font-family: $font_0, $font_1, $font_2, $font_3;
+}
+
+:focus {
+  outline: none;
+}
+
+a {
+  cursor: pointer;
+  &.info {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    color: $color_1;
+    cursor: pointer;
+  }
+}
+
+.panel {
+  position: fixed;
+  top: 0;
+  background: $color_4;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+  box-shadow: 0 0 10px $color_5;
+  z-index: 2;
+  input[type="text"] {
+    @extend %inputs;
+  }
+  textarea {
+    @extend %inputs;
+  }
+  h3 {
+    margin-bottom: 5px;
+  }
+}
+
+details {
+  padding: 0 10px;
+  margin: 0;
+  p {
+    margin: 0;
+  }
+  button {
+    border: none;
+    padding: 0 5px;
+    margin: 0;
+    font-size: 12px;
+    border-radius: 3px;
+  }
+  summary {
+    background: $color_1;
+    padding: 8px 10px;
+    color: $color_3;
+    margin: 0 0 1px;
+    cursor: pointer;
+  }
+}
+
+details[open] {
+  margin: 0 0 30px;
+}
+
+.content {
+  margin: 0 0 0 350px;
+  display: block;
+  float: left;
+  position: absolute;
+  top: 0;
+}
+
+pre {
+  font-family: $font_4;
+  font-size: 1.3em;
+  white-space: pre-wrap;
+}
+
+.shares {
+  position: absolute;
+  right: 20px;
+  bottom: 5px;
+}
+
+.g-plusone, iframe, #___plusone_0 {
+  vertical-align: middle !important;
+}
+
+.share-link {
+  z-index: 9999;
+  position: absolute;
+  bottom: 0;
+  padding: 5px 10px;
+  transition: 0.1s;
+  right: 0;
+  background: $color_4;
+  color: $color_1;
+  &:hover {
+    color: $color_3;
+    zoom: 120%;
+  }
+}
+
+h1.logo {
+  text-align: center;
+  font-weight: 700;
+  font-size: 56px;
+  color: $color_1;
+  margin: 10px auto;
+  text-transform: lowercase;
+  text-shadow: 1px 1px 1px $color_2, 1px 1px 50px $color_3;
+}
+
+.tpl-item:hover {
+  background: $color_6;
+  cursor: url('../img/delete_garbage.png'), auto;
+}
+
+div.info {
+  position: absolute;
+  left: 300px;
+  background: $color_8;
+  z-index: 1;
+  min-width: 400px;
+  padding: 0 20px;
+  width: 48%;
+  color: $color_3;
+  a {
+    color: $color_3;
+    &.close {
+      border: none;
+      background: $color_3;
+      color: $color_1;
+      text-decoration: none;
+      padding: 0 7px;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      border-radius: 50%;
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555;
+}
