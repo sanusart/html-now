@@ -14,8 +14,21 @@ There are few settings in the tabs on the left which will allow you to perform s
 
 ### Contribute 
 
-Contribute by adding scripts to [libs.json](https://github.com/sanusart/html-now/blob/master/app/data/libs.json), updating versions or improve code, ether way - contributions are always welcome.
+by...
+
+* adding scripts to [libs.json](https://github.com/sanusart/html-now/blob/master/app/data/libs.json)
+* updating versions
+* improve code
+* giving feedback or suggesting improvement
+
+Ether way - contributions are always welcome
 
 ### Made using...
 
 This was made using [AngularJs](https://angularjs.org/), [jQuery](http://jquery.com/), [Bower](http://bower.io/), [normalize.css](http://necolas.github.io/normalize.css/) and [Font-awesome](http://fortawesome.github.io/Font-Awesome/)
+
+### License
+
+[MIT](https://github.com/sanusart/html-now/blob/master/LICENSE)
+
+:)
