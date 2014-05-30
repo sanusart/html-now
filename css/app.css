@@ -21,7 +21,7 @@ h1.logo {
     color: #555;
     margin: 10px auto;
     text-transform: lowercase;
-    text-shadow: 1px 1px 1px #333,1px 1px 50px #fff;
+    text-shadow: 1px 1px 1px #333, 1px 1px 50px #fff;
 }
 
 .panel {
@@ -128,12 +128,12 @@ div.info a.close {
 }
 
 div.info a {
-    color:#fff;
+    color: #fff;
 }
 
 .shares {
     position: absolute;
-    right: 0;
+    right: 20px;
     bottom: 5px;
 }
 
@@ -141,6 +141,21 @@ div.info a {
     vertical-align: middle;
 }
 
-.g-plusone , #___plusone_0 {
+.g-plusone, #___plusone_0 {
     vertical-align: middle !important;
+}
+
+.share-link {
+    z-index: 9999;
+    position: absolute;
+    bottom: 0;
+    padding: 5px 10px;
+    transition: 0.1s;
+    right: 0;
+    background: tomato;
+    color: #555;
+}
+.share-link:hover{
+    color:#fff;
+    zoom:120%;
 }
