@@ -4,6 +4,8 @@ Fast HTML template generator
 
 > http://sanusart.github.io/html-now
 
+[![Fast HTML template generator](http://img.youtube.com/vi/AEcmMKeEVG4/0.jpg)](http://www.youtube.com/watch?v=AEcmMKeEVG4)
+
 ### What's this?
 
 This will assist you to create very basic HTML template for your page/application as a fast start point. Nothing fancy here, it will only allow you to choose and add scripts or styles.
