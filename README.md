@@ -4,7 +4,7 @@ Fast HTML template generator
 
 > http://sanusart.github.io/html-now
 
-[![Fast HTML template generator](http://img.youtube.com/vi/JtcRvbPlKHs/0.jpg)](http://www.youtube.com/watch?v=JtcRvbPlKHs)
+[![Fast HTML template generator](http://img.youtube.com/vi/vHmsoDaSbsQ/0.jpg)](http://www.youtube.com/watch?v=vHmsoDaSbsQ&fmt=18)
 
 ### What's this?
 
