@@ -49,9 +49,8 @@
     }(document, 'script', 'facebook-jssdk'));</script>
     <div class="fb-like" data-href="http://sanusart.github.io/html-now/#/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
 
-    <a href="https://twitter.com/share" class="twitter-share-button" data-via="sanusart" data-hashtags="HTML-now">Tweet</a>
+    <a href="https://twitter.com/share" class="twitter-share-button" data-url="sanusart.github.io/html-now" data-via="sanusart" data-hashtags="HTML-now">Tweet</a>
     <a href="https://twitter.com/sanusart" class="twitter-follow-button" data-show-count="false">Follow @sanusart</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
     <iframe src="http://ghbtns.com/github-btn.html?user=sanusart&repo=html-now&type=fork&count=true"
             allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
@@ -68,17 +67,25 @@
 </div>
 
 <!-- scripts -->
-<script id="jquery-v1" src="//cdn.jsdelivr.net/jquery/1.11.1/jquery.js"></script>
-<script id="jquery-migrate" src="//cdn.jsdelivr.net/jquery.migrate/1.2.1/jquery-migrate.js"></script>
-<script src="lib/jquery.details-1.7.min.js"></script>
-<script src="lib/angular/angular.min.js"></script>
-<script src="lib/angular-route/angular-route.min.js"></script>
-<script src="lib/angular-resource/angular-resource.min.js"></script>
-<script src="lib/angular-sanitize/angular-sanitize.min.js"></script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<!-- env:prod -->
+<script src="js/html-now.min.js"></script>
+<!-- env:prod:end -->
+
+<!-- env:dev --#>
+<script src="lib/jquery/dist/jquery.min.js"></script>
+<script src="lib/jquery-details/jquery.details.js"></script>
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular-route/angular-route.js"></script>
+<script src="lib/angular-resource/angular-resource.js"></script>
+<script src="lib/angular-sanitize/angular-sanitize.js"></script>
 <script src="js/app.js"></script>
 <script src="js/services.js"></script>
 <script src="js/controllers.js"></script>
 <script src="js/filters.js"></script>
 <script src="js/directives.js"></script>
+<!-- env:dev --#>
+
 </body>
 </html>
