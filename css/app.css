@@ -69,7 +69,7 @@ pre {
   white-space: pre-wrap; }
 
 .shares {
-  position: absolute;
+  position: fixed;
   right: 20px;
   bottom: 5px; }
 
@@ -78,7 +78,7 @@ pre {
 
 .share-link {
   z-index: 9999;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   padding: 5px 10px;
   transition: 0.1s;
