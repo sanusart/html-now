@@ -3,6 +3,9 @@
   padding: 10px;
   width: 245px; }
 
+* {
+  transition: all 0.5s linear; }
+
 html {
   background: #f2f2f2; }
 
@@ -35,26 +38,26 @@ a {
   .panel h3 {
     margin-bottom: 5px; }
 
-details {
+dl {
   padding: 0 10px;
   margin: 0; }
-  details p {
+  dl p {
     margin: 0; }
-  details button {
+  dl button {
     border: none;
     padding: 0 5px;
     margin: 0;
     font-size: 12px;
     border-radius: 3px; }
-  details summary {
+  dl dt {
     background: #555555;
     padding: 8px 10px;
     color: white;
     margin: 0 0 1px;
-    cursor: pointer; }
-
-details[open] {
-  margin: 0 0 30px; }
+    cursor: pointer;
+    border-width: 0px; }
+  dl dd {
+    margin: 0px 0px 20px 0px; }
 
 .content {
   margin: 0 0 0 350px;
@@ -69,6 +72,11 @@ pre {
   white-space: pre-wrap; }
 
 .shares {
+  position: fixed;
+  right: -2000px;
+  bottom: 5px; }
+
+.shares.bring {
   position: fixed;
   right: 20px;
   bottom: 5px; }
