@@ -19,11 +19,21 @@ There are few settings in the tabs on the left which will allow you to perform s
 by...
 
 * adding scripts to [libs.json](https://github.com/sanusart/html-now/blob/master/app/data/libs.json)
-* updating versions
+* updating existing scripts versions
 * improve code
-* giving feedback or suggesting improvement
+* feedback or suggesting improvement
 
 Ether way - contributions are always welcome
+
+### For developers
+
+Setup:
+
+* Clone this repository `git clone https://github.com/sanusart/html-now.git`
+* `cd html-now`
+* `npm install` will install all dependencies and run bower
+* start local server with `npm start` and navigate to http://localhost:8000
+
 
 ### Made using...
 

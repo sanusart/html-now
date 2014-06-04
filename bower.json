@@ -9,10 +9,7 @@
     "normalize.css": "~3.0.1",
     "angular": "~1.2.16",
     "angular-route": "~1.2.16",
-    "angular-resource": "~1.2.16",
-    "angular-sanitize": "~1.2.16",
     "font-awesome": "~4.1.0",
-    "modernizr": "~2.8.1",
-    "jquery-details": "~0.1.0"
+    "modernizr": "~2.8.1"
   }
 }

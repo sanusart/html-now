@@ -1,19 +1,21 @@
 <div class="panel">
-<h1 class="logo">html</h1>
-<a class="info" ng-click="show.the.info=!show.the.info"><i class="fa fa-info-circle"></i></a>
-    <details>
-        <summary>TEXT</summary>
+    <h1 class="logo">html</h1>
+    <a class="info" ng-click="show.the.info=!show.the.info"><i class="fa fa-info-circle"></i></a>
 
+    <dl>
+        <dt ng-click="open.text=!open.text"><i class="fa fa-chevron-right" ng-class="{'fa-chevron-down': open.text}"></i> TEXT</dt>
+<dd ng-show="open.text">
         <h3>Title:</h3>
         <input type="text" ng-model="tpl_html_title">
 
         <h3>Body:</h3>
         <textarea ng-model="tpl_body_text"></textarea>
-    </details>
+</dd>
+    </dl>
 
-    <details>
-        <summary>META/HEAD</summary>
-
+    <dl>
+        <dt ng-click="open.meta=!open.meta"><i class="fa fa-chevron-right" ng-class="{'fa-chevron-down': open.meta}"></i> META/HEAD</dt>
+        <dd ng-show="open.meta">
         <h3>Description:</h3>
         <input type="text" ng-model="tpl_meta_description">
 
@@ -21,40 +23,66 @@
         <input type="text" ng-model="tpl_tag_body_classes">
 
         <h3>Meta tags:</h3>
+
         <p ng-repeat="meta in libs | filter: { type: 'meta' } track by $index">
-            <button ng-click="useScript(meta.name)">add <i class="fa fa-plus"></i> </button> {{meta.name}}
+            <button class="{{ meta.name | noSpace }}" ng-click="useScript(meta.name)">add <i class="fa fa-plus"></i>
+            </button>
+            {{meta.name}}
         </p>
+        </dd>
+    </dl>
 
-    </details>
-
-    <details>
-        <summary>SCRIPTS</summary>
+    <dl>
+        <dt ng-click="open.scripts=!open.scripts"><i class="fa fa-chevron-right" ng-class="{'fa-chevron-down': open.scripts}"></i> SCRIPTS</dt>
+        <dd ng-show="open.scripts">
 
         <h3>USE:</h3>
 
-        <input type="text" ng-model="search_libs" placeholder="Search libraries" title="You can type 'css' or 'js' to filter by script type type">
-        <p ng-repeat="lib in libs | orderBy: ['-type','name'] | filter: search_libs | filter: { type: '!meta' } track by lib.name">
-            <button ng-click="useScript(lib.name)">add <i class="fa fa-plus"></i> </button> <b>{{lib.type | uppercase}}</b> {{lib.name}}
-        </p>
+        <input type="text" ng-model="search_libs" placeholder="Search libraries"
+               title="You can type 'css' or 'js' to filter by script type type">
 
-    </details>
+        <p ng-repeat="lib in libs | orderBy: ['-type','name'] | filter: search_libs | filter: { type: '!meta' } track by lib.name">
+            <button class="{{ lib.name | noSpace }}" ng-click="useScript(lib.name)">add <i class="fa fa-plus"></i>
+            </button>
+            <b>{{lib.type | uppercase}}</b> {{lib.name}}
+        </p>
+        </dd>
+    </dl>
+
+    <dl>
+        <dt ng-click="open.bundles=!open.bundles"><i class="fa fa-chevron-right" ng-class="{'fa-chevron-down': open.bundles}"></i> BUNDLES</dt>
+        <dd ng-show="open.bundles">
+        <p><button ng-click="bundle('jQuery-v2+AngularJs+AngularJs-route+AngularJs-resource+AngularJs-animate+AngularJs-cookies+AngularJs-sanitize+AngularJs-csp+Local-CSS-file+Local-Javascript-file')">use <i class="fa fa-plus"></i></button> AngularJs</p>
+        <p><button ng-click="bundle('jQuery-v2+Ember+Ember-data+Local-CSS-file+Local-Javascript-file')">use <i class="fa fa-plus"></i></button> Ember Js</p>
+        <p><button ng-click="bundle('jQuery-v1+jQuery-migrate')">use <i class="fa fa-plus"></i></button> jQuery w/migrate</p>
+        <p><button ng-click="bundle('jQuery-v2+Twitter-Bootstrap-CSS+Twitter-Bootstrap-JS')">use <i class="fa fa-plus"></i></button> Twitter Bootstrap</p>
+        </dd>
+    </dl>
 
 
 </div>
 <div class="info" ng-show="show.the.info">
     <a class="close" ng-click="show.the.info=!show.the.info">X</a>
+
     <h3>What's this?</h3>
-    <p>This will assist you to create very basic HTML template for your page/application as a fast start point. Nothing fancy here,
+
+    <p>This will assist you to create very basic HTML template for your page/application as a fast start point. Nothing
+        fancy here,
         it will only allow you to choose and add scripts or styles.</p>
 
     <h3>How it works</h3>
-    <p>There are few settings in the tabs on the left which will allow you to perform simple additions to the template that you see in front of you.</p>
+
+    <p>There are few settings in the tabs on the left which will allow you to perform simple additions to the template
+        that you see in front of you.</p>
 
     <h3>Made using...</h3>
-    <p>This was made using <a href="https://angularjs.org/">AngularJs</a>, <a href="http://jquery.com/">jQuery</a>, <a href="http://bower.io/">bower</a>, <a href="http://necolas.github.io/normalize.css/">normalize.css</a> and <a href="http://fortawesome.github.io/Font-Awesome/">font-awesome</a></p>
-    <hr />
 
-    <p>&copy; 2014 Sasha Khamkov | <a href="http://sanusart.com">sanusart.com</a>
+    <p>This was made using <a href="https://angularjs.org/">AngularJs</a>, <a href="http://jquery.com/">jQuery</a>, <a
+            href="http://bower.io/">bower</a>, <a href="http://necolas.github.io/normalize.css/">normalize.css</a> and
+        <a href="http://fortawesome.github.io/Font-Awesome/">font-awesome</a></p>
+    <hr/>
+
+    <p>&copy; {{ date | date: 'yyyy' }} Sasha Khamkov | <a href="http://sanusart.com">sanusart.com</a>
 
 </div>
 <div class="content">

@@ -5,7 +5,7 @@
 angular.module('htmlNow.filters', [])
     .filter('noSpace', function () {
         return function (input) {
-            return input.replace(' ', '-');
+            return input.replace(/ /g, '-');
         };
     })
     .filter('setVersion', function () {

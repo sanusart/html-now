@@ -6,7 +6,8 @@
 <head>
     <meta charset="utf-8">
     <!--[if IE]>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <![endif]-->
     <title>Fast, online HTML template generator</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,10 +35,12 @@
 
 <div ng-view></div>
 
+
 <a href="https://github.com/sanusart/html-now"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
 
 <a ng-click="show.shares=!show.shares" class="share-link"><i class="fa fa-share-alt"></i> </a>
-<div class="shares" ng-show="show.shares">
+
+<div class="shares" ng-class="{bring: show.shares}">
 
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
@@ -49,8 +52,9 @@
     }(document, 'script', 'facebook-jssdk'));</script>
     <div class="fb-like" data-href="http://sanusart.github.io/html-now/#/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
 
-    <a href="https://twitter.com/share" class="twitter-share-button" data-url="sanusart.github.io/html-now" data-via="sanusart" data-hashtags="HTML-now">Tweet</a>
+    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://sanusart.github.io/html-now/#/" data-via="sanusart" data-hashtags="html-now">Tweet</a>
     <a href="https://twitter.com/sanusart" class="twitter-follow-button" data-show-count="false">Follow @sanusart</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
     <iframe src="http://ghbtns.com/github-btn.html?user=sanusart&repo=html-now&type=fork&count=true"
             allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
@@ -64,10 +68,10 @@
     <!-- Place this tag where you want the +1 button to render. -->
     <div class="g-plusone" data-size="medium"></div>
 
+
 </div>
 
 <!-- scripts -->
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 <!-- env:prod -->
 <script src="js/html-now.min.js"></script>
@@ -75,17 +79,14 @@
 
 <!-- env:dev --#>
 <script src="lib/jquery/dist/jquery.min.js"></script>
-<script src="lib/jquery-details/jquery.details.js"></script>
 <script src="lib/angular/angular.js"></script>
 <script src="lib/angular-route/angular-route.js"></script>
-<script src="lib/angular-resource/angular-resource.js"></script>
-<script src="lib/angular-sanitize/angular-sanitize.js"></script>
 <script src="js/app.js"></script>
 <script src="js/services.js"></script>
 <script src="js/controllers.js"></script>
 <script src="js/filters.js"></script>
 <script src="js/directives.js"></script>
-<!-- env:dev --#>
+<!-- env:dev:end -->
 
 </body>
 </html>

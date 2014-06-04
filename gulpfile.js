@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var fs = require('fs');
 var pkg_json = require('./package.json');
 var fs = require('fs');
 var concat = require('gulp-concat-sourcemap');
