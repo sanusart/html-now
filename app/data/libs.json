@@ -131,6 +131,24 @@
         "type": "css"
     },
     {
+        "name": "Zurb-Foundation JS",
+        "url": "//cdnjs.cloudflare.com/ajax/libs/foundation/###/js/foundation.min.js",
+        "version": "5.2.3",
+        "type": "js"
+    },
+    {
+        "name": "Zurb-Foundation CSS",
+        "url": "//cdnjs.cloudflare.com/ajax/libs/foundation/###/css/foundation.min.css",
+        "version": "5.2.3",
+        "type": "css"
+    },
+    {
+        "name": "Fastclick JS",
+        "url": "//cdnjs.cloudflare.com/ajax/libs/foundation/###/js/vendor/fastclick.js",
+        "version": "5.2.3",
+        "type": "js"
+    },
+    {
         "name": "Google fonts",
         "url": "//fonts.googleapis.com/css?family=Open+Sans",
         "version": "",
