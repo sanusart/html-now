@@ -26,44 +26,50 @@
     {
         "name": "AngularJs",
         "url": "//cdn.jsdelivr.net/angularjs/###/angular.js",
-        "version": "1.2.16",
+        "version": "1.2.19",
         "type": "js"
     },
     {
         "name": "AngularJs route",
-        "url": "//cdn.jsdelivr.net/angularjs/###/angular-route.min.js",
-        "version": "1.2.16",
+        "url": "//ajax.googleapis.com/ajax/libs/angularjs/###/angular-route.min.js",
+        "version": "1.2.19",
         "type": "js"
     },
     {
         "name": "AngularJs sanitize",
-        "url": "//cdn.jsdelivr.net/angularjs/###/angular-sanitize.min.js",
-        "version": "1.2.16",
+        "url": "//ajax.googleapis.com/ajax/libs/angularjs/###/angular-sanitize.min.js",
+        "version": "1.2.19",
         "type": "js"
     },
     {
         "name": "AngularJs loader",
-        "url": "//cdn.jsdelivr.net/angularjs/###/angular-loader.min.js",
-        "version": "1.2.16",
+        "url": "//ajax.googleapis.com/ajax/libs/angularjs/###/angular-loader.min.js",
+        "version": "1.2.19",
         "type": "js"
     },
     {
         "name": "AngularJs resource",
-        "url": "//cdn.jsdelivr.net/angularjs/###/angular-resource.min.js",
-        "version": "1.2.16",
+        "url": "//ajax.googleapis.com/ajax/libs/angularjs/###/angular-resource.min.js",
+        "version": "1.2.19",
         "type": "js"
     },
     {
         "name": "AngularJs cookies",
-        "url": "//cdn.jsdelivr.net/angularjs/###/angular-cookies.min.js",
-        "version": "1.2.16",
+        "url": "//ajax.googleapis.com/ajax/libs/angularjs/###/angular-cookies.min.js",
+        "version": "1.2.19",
         "type": "js"
     },
     {
         "name": "AngularJs animate",
-        "url": "//cdn.jsdelivr.net/angularjs/###/angular-animate.min.js",
-        "version": "1.2.16",
+        "url": "//ajax.googleapis.com/ajax/libs/angularjs/###/angular-animate.min.js",
+        "version": "1.2.19",
         "type": "js"
+    },
+    {
+        "name": "AngularJs csp",
+        "url": "//ajax.googleapis.com/ajax/libs/angularjs/###/angular-csp.css",
+        "version": "1.2.19",
+        "type": "css"
     },
     {
         "name": "Local Javascript file",
@@ -152,12 +158,6 @@
         "name": "Google fonts",
         "url": "//fonts.googleapis.com/css?family=Open+Sans",
         "version": "",
-        "type": "css"
-    },
-    {
-        "name": "AngularJs csp",
-        "url": "//cdn.jsdelivr.net/angularjs/###/angular-csp.css",
-        "version": "1.2.16",
         "type": "css"
     },
     {
