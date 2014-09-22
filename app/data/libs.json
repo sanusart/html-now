@@ -20,55 +20,55 @@
     {
         "name": "Modernizr",
         "url": "//cdn.jsdelivr.net/modernizr/###/modernizr.js",
-        "version": "2.8.1",
+        "version": "2.8.3",
         "type": "js"
     },
     {
         "name": "AngularJs",
-        "url": "//cdn.jsdelivr.net/angularjs/###/angular.js",
-        "version": "1.2.19",
+        "url": "//http://ajax.googleapis.com/ajax/libs/angularjs/###/angular.min.js",
+        "version": "1.2.25",
         "type": "js"
     },
     {
         "name": "AngularJs route",
         "url": "//ajax.googleapis.com/ajax/libs/angularjs/###/angular-route.min.js",
-        "version": "1.2.19",
+        "version": "1.2.25",
         "type": "js"
     },
     {
         "name": "AngularJs sanitize",
         "url": "//ajax.googleapis.com/ajax/libs/angularjs/###/angular-sanitize.min.js",
-        "version": "1.2.19",
+        "version": "1.2.25",
         "type": "js"
     },
     {
         "name": "AngularJs loader",
         "url": "//ajax.googleapis.com/ajax/libs/angularjs/###/angular-loader.min.js",
-        "version": "1.2.19",
+        "version": "1.2.25",
         "type": "js"
     },
     {
         "name": "AngularJs resource",
         "url": "//ajax.googleapis.com/ajax/libs/angularjs/###/angular-resource.min.js",
-        "version": "1.2.19",
+        "version": "1.2.25",
         "type": "js"
     },
     {
         "name": "AngularJs cookies",
         "url": "//ajax.googleapis.com/ajax/libs/angularjs/###/angular-cookies.min.js",
-        "version": "1.2.19",
+        "version": "1.2.25",
         "type": "js"
     },
     {
         "name": "AngularJs animate",
         "url": "//ajax.googleapis.com/ajax/libs/angularjs/###/angular-animate.min.js",
-        "version": "1.2.19",
+        "version": "1.2.25",
         "type": "js"
     },
     {
         "name": "AngularJs csp",
         "url": "//ajax.googleapis.com/ajax/libs/angularjs/###/angular-csp.css",
-        "version": "1.2.19",
+        "version": "1.2.25",
         "type": "css"
     },
     {
@@ -78,14 +78,14 @@
     },
     {
         "name": "Ember",
-        "url": "//cdn.jsdelivr.net/emberjs/###/ember.js",
-        "version": "1.5.1",
+        "url": "//cdnjs.cloudflare.com/ajax/libs/ember.js/###/ember.min.js",
+        "version": "1.6.1",
         "type": "js"
     },
     {
         "name": "Ember data",
         "url": "//cdnjs.cloudflare.com/ajax/libs/ember-data.js/###/ember-data.min.js",
-        "version": "1.5.1-beta.7",
+        "version": "1.0.0-beta.8",
         "type": "js"
     },
     {
@@ -127,13 +127,13 @@
     {
         "name": "Twitter Bootstrap JS",
         "url": "//netdna.bootstrapcdn.com/bootstrap/###/js/bootstrap.min.js",
-        "version": "3.1.1",
+        "version": "3.2.0",
         "type": "js"
     },
     {
         "name": "Twitter Bootstrap CSS",
         "url": "//netdna.bootstrapcdn.com/bootstrap/###/css/bootstrap.min.css",
-        "version": "3.1.1",
+        "version": "3.2.0",
         "type": "css"
     },
     {
