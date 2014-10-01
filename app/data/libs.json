@@ -79,13 +79,13 @@
     {
         "name": "Ember",
         "url": "//cdnjs.cloudflare.com/ajax/libs/ember.js/###/ember.min.js",
-        "version": "1.6.1",
+        "version": "1.7.0",
         "type": "js"
     },
     {
         "name": "Ember data",
         "url": "//cdnjs.cloudflare.com/ajax/libs/ember-data.js/###/ember-data.min.js",
-        "version": "1.0.0-beta.8",
+        "version": "1.0.0-beta.10",
         "type": "js"
     },
     {
