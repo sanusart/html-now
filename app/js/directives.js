@@ -44,6 +44,9 @@ angular.module('htmlNow.directives', [])
                                     if (val.name === 'Modernizr') {
                                         scope.tpl_tag_html = '<!--[if lt IE 7]><html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->\n<!--[if IE 7]><html lang="en" class="no-js lt-ie9 lt-ie8"><![endif]-->\n<!--[if IE 8]><html lang="en" class="no-js lt-ie9"><![endif]-->\n<!--[if gt IE 8]><!--><html lang="en" class="no-js"><!--<![endif]-->';
                                     }
+                                    if (val.name.match('AngularJs')) {
+                                        scope.tpl_tag_html = '<html lang="en" data-ng-app="myapp">';
+                                    }
                                 } else if (val.type === 'css') {
                                     scope.tpl_css.push('<link rel="stylesheet" href="' + $filter('setVersion')(val.url, val.version) + '">');
                                 } else if (val.type === 'meta') {
