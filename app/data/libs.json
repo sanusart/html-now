@@ -26,49 +26,49 @@
     {
         "name": "AngularJs",
         "url": "//http://ajax.googleapis.com/ajax/libs/angularjs/###/angular.min.js",
-        "version": "1.2.25",
+        "version": "1.2.26",
         "type": "js"
     },
     {
         "name": "AngularJs route",
         "url": "//ajax.googleapis.com/ajax/libs/angularjs/###/angular-route.min.js",
-        "version": "1.2.25",
+        "version": "1.2.26",
         "type": "js"
     },
     {
         "name": "AngularJs sanitize",
         "url": "//ajax.googleapis.com/ajax/libs/angularjs/###/angular-sanitize.min.js",
-        "version": "1.2.25",
+        "version": "1.2.26",
         "type": "js"
     },
     {
         "name": "AngularJs loader",
         "url": "//ajax.googleapis.com/ajax/libs/angularjs/###/angular-loader.min.js",
-        "version": "1.2.25",
+        "version": "1.2.26",
         "type": "js"
     },
     {
         "name": "AngularJs resource",
         "url": "//ajax.googleapis.com/ajax/libs/angularjs/###/angular-resource.min.js",
-        "version": "1.2.25",
+        "version": "1.2.26",
         "type": "js"
     },
     {
         "name": "AngularJs cookies",
         "url": "//ajax.googleapis.com/ajax/libs/angularjs/###/angular-cookies.min.js",
-        "version": "1.2.25",
+        "version": "1.2.26",
         "type": "js"
     },
     {
         "name": "AngularJs animate",
         "url": "//ajax.googleapis.com/ajax/libs/angularjs/###/angular-animate.min.js",
-        "version": "1.2.25",
+        "version": "1.2.26",
         "type": "js"
     },
     {
         "name": "AngularJs csp",
         "url": "//ajax.googleapis.com/ajax/libs/angularjs/###/angular-csp.css",
-        "version": "1.2.25",
+        "version": "1.2.26",
         "type": "css"
     },
     {
@@ -146,6 +146,12 @@
         "name": "Zurb-Foundation CSS",
         "url": "//cdnjs.cloudflare.com/ajax/libs/foundation/###/css/foundation.min.css",
         "version": "5.2.3",
+        "type": "css"
+    },
+    {
+        "name": "Font - Awesome CSS",
+        "url": "//cdn.jsdelivr.net/fontawesome/###/css/font-awesome.css",
+        "version": "4.2.0",
         "type": "css"
     },
     {
