@@ -2,6 +2,8 @@
 
 Fast HTML template generator
 
+[![Build Status](https://travis-ci.org/sanusart/html-now.svg?branch=master)](https://travis-ci.org/sanusart/html-now)
+
 > http://sanusart.github.io/html-now
 
 [![Fast HTML template generator](http://img.youtube.com/vi/vHmsoDaSbsQ/0.jpg)](http://www.youtube.com/watch?v=vHmsoDaSbsQ&fmt=18)
@@ -33,6 +35,7 @@ Setup:
 * `cd html-now`
 * `npm install` will install all dependencies and run bower
 * start local server with `npm start` and navigate to http://localhost:8000
+* run tests with `npm test`
 
 
 ### Made using...

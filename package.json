@@ -1,23 +1,26 @@
 {
-    "name": "html-now",
-    "description": "Fast HTML template",
-    "version": "0.1.0",
-    "repository": "https://github.com/sanusart/html-now",
-    "license": "MIT",
-    "devDependencies": {
-        "bower": "^1.3.1",
-        "gulp-concat-sourcemap": "^1.3.0",
-        "gulp-connect": "^2.0.5",
-        "gulp-strip-debug": "^0.3.0",
-        "http-server": "^0.6.1",
-        "karma": "~0.10",
-        "protractor": "~0.20.1"
-    },
-    "scripts": {
-        "postinstall": "bower install",
-        "start": "http-server app -a localhost -p 8000"
-    },
-    "dependencies": {
-        "gulp": "^3.6.2"
-    }
+  "name": "html-now",
+  "description": "Fast HTML template",
+  "version": "0.1.0",
+  "repository": "https://github.com/sanusart/html-now",
+  "license": "MIT",
+  "devDependencies": {
+    "bower": "^1.3.1",
+    "gulp-concat-sourcemap": "^1.3.0",
+    "gulp-connect": "^2.0.5",
+    "gulp-strip-debug": "^0.3.0",
+    "http-server": "^0.6.1",
+    "karma": "~0.10",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "phantomjs": "^1.9.15",
+    "protractor": "~0.20.1"
+  },
+  "scripts": {
+    "postinstall": "bower install",
+    "test": "karma start --single-run",
+    "start": "http-server app -a localhost -p 8000"
+  },
+  "dependencies": {
+    "gulp": "^3.6.2"
+  }
 }

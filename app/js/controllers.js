@@ -22,7 +22,7 @@ angular.module('htmlNow.controllers', ['ngRoute'])
             $location.path('/' + query);
         };
 
-        if ($route.current.params.names) {
+        if ($route.current && $route.current.params.names) {
             $timeout(function () {
                 var savedLibs = $route.current.params.names.split('+');
                 angular.forEach(savedLibs, function (savedLib) {
