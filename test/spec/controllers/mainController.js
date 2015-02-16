@@ -1,6 +1,8 @@
 describe('Unit: MainController', function () {
     beforeEach(module('htmlNow'));
+
     var ctrl, scope;
+
     beforeEach(inject(function ($controller, $rootScope, $httpBackend) {
         scope = $rootScope.$new();
         ctrl = $controller('Main', {
@@ -11,4 +13,5 @@ describe('Unit: MainController', function () {
     it('should create $scope.welcome when calling welcome', function () {
         expect(scope.welcome).toBe('Hello, Hello');
     });
-})
+
+});
