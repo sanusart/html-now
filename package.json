@@ -19,6 +19,7 @@
   "scripts": {
     "postinstall": "bower install",
     "test": "karma start --single-run",
-    "start": "http-server app -a localhost -p 8000"
+    "start": "http-server app -a localhost -p 8000",
+    "site-deploy": "gulp prod && git push origin `git subtree split --prefix app master`:gh-pages --force && gulp dev"
   }
 }

@@ -40,3 +40,8 @@ com_crashlytics_export_strings.xml
 
 npm-debug.log
 app/lib/*
+app/fonts
+app/css/html-now.min.css.map
+app/css/html-now.min.css
+app/js/html-now.min.js
+app/js/html-now.min.js.map

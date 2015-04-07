@@ -1,5 +1,4 @@
 var gulp = require('gulp');
-var fs = require('fs');
 var pkg_json = require('./package.json');
 var fs = require('fs');
 var concat = require('gulp-concat-sourcemap');
@@ -22,10 +21,8 @@ gulp.task('dev', function() {
     var files = ['./app/index.html'];
     files.forEach(function(file) {
         var content = fs.readFileSync(file, "utf8")
-            .replace('<!-- ' + env_option.env_dev + ' --' + env_option.blocking_char + '>', '<!-- ' + env_option.env_dev + ' -->')
-            .replace('<!-- ' + env_option.env_prod + ' -->', '<!-- ' + env_option.env_prod + ' --' + env_option.blocking_char + '>')
-            .replace('/* ' + env_option.env_dev + ' *' + env_option.blocking_char + '/', '/* ' + env_option.env_dev + ' */')
-            .replace('/* ' + env_option.env_prod + ' */', '/* ' + env_option.env_prod + ' *' + env_option.blocking_char + '/');
+            .replace(new RegExp("<\!-- " + env_option.env_dev + " --" + env_option.blocking_char + ">","gi"), '<!-- ' + env_option.env_dev + ' -->')
+            .replace(new RegExp("<\!-- " + env_option.env_prod + " -->","gi"), '<!-- ' + env_option.env_prod + ' --' + env_option.blocking_char + '>');
         fs.writeFileSync(file, content);
     });
 });
@@ -36,14 +33,12 @@ gulp.task('dev', function() {
  * Change Gisto environment to "production", also concatenates files and remove console logs
  * Use: gulp prod
  */
-gulp.task('prod', ['concat'], function() {
+gulp.task('prod', ['concat','concat-css'], function() {
     var files = ['./app/index.html'];
     files.forEach(function(file) {
         var content = fs.readFileSync(file, "utf8")
-            .replace('<!-- ' + env_option.env_prod + ' --' + env_option.blocking_char + '>', '<!-- ' + env_option.env_prod + ' -->')
-            .replace('<!-- ' + env_option.env_dev + ' -->', '<!-- ' + env_option.env_dev + ' --' + env_option.blocking_char + '>')
-            .replace('/* ' + env_option.env_prod + ' *' + env_option.blocking_char + '/', '/* ' + env_option.env_prod + ' */')
-            .replace('/* ' + env_option.env_dev + ' */', '/* ' + env_option.env_dev + ' *' + env_option.blocking_char + '/');
+            .replace(new RegExp("<\!-- " + env_option.env_prod + " --" + env_option.blocking_char + ">","gi"), '<!-- ' + env_option.env_prod + ' -->')
+            .replace(new RegExp("<\!-- " + env_option.env_dev + " -->","gi"), '<!-- ' + env_option.env_dev + ' --' + env_option.blocking_char + '>');
         fs.writeFileSync(file, content);
     });
 });
@@ -67,6 +62,21 @@ gulp.task('concat', function() {
         .pipe(strip_log())
         .pipe(concat('html-now.min.js'))
         .pipe(gulp.dest('./app/js/'));
+});
+
+gulp.task('concat-css',function(){
+    gulp.src([
+        './app/lib/normalize.css/normalize.css',
+        './app/lib/font-awesome/css/font-awesome.min.css',
+        './app/css/app.css'
+    ])
+        .pipe(concat('html-now.min.css'))
+        .pipe(gulp.dest('./app/css/'));
+});
+
+gulp.task('fonts', function () {
+    return gulp.src(['app/lib/font-awesome/fonts/**'])
+        .pipe(gulp.dest('app/fonts'));
 });
 
 /**
