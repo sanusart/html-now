@@ -13,7 +13,7 @@ angular.module('htmlNow.directives', [])
                 scope.tpl_css = [];
                 scope.tpl_meta = [];
 
-                scope.delete = function (index, delete_type) {
+                scope['delete'] = function (index, delete_type) {
                     switch (delete_type) {
                         case 'css':
                             scope.tpl_css.splice(index, 1);
