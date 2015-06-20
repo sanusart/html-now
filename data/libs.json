@@ -102,6 +102,18 @@
         "type": "js"
     },
     {
+        "name": "Underscore",
+        "url": "//cdnjs.cloudflare.com/ajax/libs/underscore.js/###/underscore.js",
+        "version": "1.8.3",
+        "type": "js"
+    },
+    {
+        "name": "Lodash",
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/lodash.js/###/lodash.js",
+        "version": "3.9.3",
+        "type": "js"
+    },
+    {
         "name": "Local Javascript file",
         "url": "./js/script.js",
         "type": "js"
@@ -272,7 +284,7 @@
     },
     {
         "name": "html5 shiv",
-        "markup":"<!--[if lt IE 9]>\n\t<script src=\"http://html5shiv.googlecode.com/svn/trunk/html5.js\"></script>\n\t<![endif]-->",
-        "type":"meta"
+        "markup": "<!--[if lt IE 9]>\n\t<script src=\"http://html5shiv.googlecode.com/svn/trunk/html5.js\"></script>\n\t<![endif]-->",
+        "type": "meta"
     }
 ]
