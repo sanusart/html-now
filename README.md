@@ -1,16 +1,14 @@
-# HTML Now
+# Mosaic HTML template generator
 
-Fast HTML template generator
+Mosaic HTML template generator
 
-[![Build Status](https://travis-ci.org/sanusart/html-now.svg?branch=master)](https://travis-ci.org/sanusart/html-now)
-
+Forked and Based off of the original generator found here:
 > http://sanusart.github.io/html-now
 
-[![Fast HTML template generator](http://img.youtube.com/vi/vHmsoDaSbsQ/0.jpg)](http://www.youtube.com/watch?v=vHmsoDaSbsQ&fmt=18)
 
 ### What's this?
 
-This will assist you to create very basic HTML template for your page/application as a fast start point. Nothing fancy here, it will only allow you to choose and add scripts or styles.
+This will assist you in creating very basic HTML template for your page/application as a fast as possible. Nothing fancy here, it will only allow you to choose and add scripts or styles.
 
 ### How it works
 

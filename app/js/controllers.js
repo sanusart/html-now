@@ -4,7 +4,7 @@
 
 angular.module('htmlNow.controllers', ['ngRoute'])
     .controller('Main', ['$scope', 'dataService', '$route', '$filter', '$timeout', '$location', '$window', function ($scope, dataService, $route, $filter, $timeout, $location, $window) {
-        $scope.welcome = 'Hello, Hello';
+        $scope.welcome = 'Mosaic Static Template Generator';
         $scope.tpl_html_title = 'My template';
         $scope.tpl_body_text = '<p>This is <b>my</b> text.</p>';
         $scope.tpl_meta_description = 'My template';
