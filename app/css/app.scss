@@ -3,14 +3,15 @@ $color_0: #f2f2f2;
 $color_1: #555;
 $color_2: #333;
 $color_3: #fff;
-$color_4: #ff6347;
+$color_4: #333333;
 $color_5: #000;
 $color_6: #f8b9b7;
 $color_7: #d2b48c;
 $color_8: #008080;
+$color_9: #e9510e;
 
 //fonts
-$font_0: trebuchet ms;
+$font_0: "Open Sans";
 $font_1: arial;
 $font_2: verdana;
 $font_3: sans-serif;
@@ -27,7 +28,7 @@ $font_4: monospace !important;
 }
 
 html {
-  background: $color_0;
+  background: $color_3;
 }
 
 body {
@@ -66,8 +67,9 @@ a {
   textarea {
     @extend %inputs;
   }
-  h3 {
+  h4 {
     margin-bottom: 5px;
+    color: white;
   }
 }
 
@@ -79,6 +81,7 @@ dl {
   }
   p {
     margin: 0;
+    color: $color_9;
   }
   button {
     border: none;
@@ -145,14 +148,11 @@ pre {
   }
 }
 
-h1.logo {
-  text-align: center;
-  font-weight: 700;
-  font-size: 56px;
-  color: $color_1;
-  margin: 10px auto;
-  text-transform: lowercase;
-  text-shadow: 1px 1px 1px $color_2, 1px 1px 50px $color_3;
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-left: 80px;
+  padding: 20px;
 }
 
 .tpl-item:hover {
